@@ -190,11 +190,12 @@ WaveformBuilder.prototype._getRemoteWaveformData = function(options, callback) {
 
     const waveformData = WaveformData.create(event.target.response);
 
-    if (waveformData.channels !== 1 && waveformData.channels !== 2) {
-      callback(new Error('Peaks.init(): Only mono or stereo waveforms are currently supported'));
-      return;
-    }
-    else if (waveformData.bits !== 8) {
+    // if (waveformData.channels !== 1 && waveformData.channels !== 2) {
+    //   callback(new Error('Peaks.init(): Only mono or stereo waveforms are currently supported'));
+    //   return;
+    // }
+    // else 
+    if (waveformData.bits !== 8) {
       callback(new Error('Peaks.init(): 16-bit waveform data is not supported'));
       return;
     }
@@ -257,11 +258,12 @@ WaveformBuilder.prototype._buildWaveformFromLocalData = function(options, callba
   try {
     const createdWaveformData = WaveformData.create(data);
 
-    if (createdWaveformData.channels !== 1 && createdWaveformData.channels !== 2) {
-      callback(new Error('Peaks.init(): Only mono or stereo waveforms are currently supported'));
-      return;
-    }
-    else if (createdWaveformData.bits !== 8) {
+    // if (createdWaveformData.channels !== 1 && createdWaveformData.channels !== 2) {
+    //   callback(new Error('Peaks.init(): Only mono or stereo waveforms are currently supported'));
+    //   return;
+    // }
+    // else 
+    if (createdWaveformData.bits !== 8) {
       callback(new Error('Peaks.init(): 16-bit waveform data is not supported'));
       return;
     }
