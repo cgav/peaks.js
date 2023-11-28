@@ -14,6 +14,6 @@
 /demo/peaks.ext.min.js
 /demo/peaks.ext.min.js.map
 /demo/sample.mp3
-/dist
+# /dist
 /docs
 /node_modules
