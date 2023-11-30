@@ -43,7 +43,7 @@ OverlaySegmentMarker.prototype.init = function (group) {
     fontFamily: this._options.fontFamily,
     fontSize: this._options.fontSize,
     fontStyle: this._options.fontStyle,
-    fill: '#000',
+    fill: 'transparent',
     textAlign: 'center',
     visible: false,
   });
