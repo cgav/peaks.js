@@ -3609,12 +3609,12 @@ OverlaySegmentMarker.prototype.fitToView = function () {
   this._handle.height(overlayRectHeight);
 };
 OverlaySegmentMarker.prototype.update = function (options) {
-  if (options.startTime !== undefined && this._options.startMarker) {
-    this._label.text(this._options.layer.formatTime(options.startTime));
-  }
-  if (options.endTime !== undefined && !this._options.startMarker) {
-    this._label.text(this._options.layer.formatTime(options.endTime));
-  }
+  // if (options.startTime !== undefined && this._options.startMarker) {
+  //   this._label.text(this._options.layer.formatTime(options.startTime));
+  // }
+  // if (options.endTime !== undefined && !this._options.startMarker) {
+  //   this._label.text(this._options.layer.formatTime(options.endTime));
+  // }
 };
 
 /**
